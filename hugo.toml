@@ -1,0 +1,60 @@
+baseURL = 'https://aha-jansen.github.io/'
+locale = 'zh-CN'
+title = 'Jansen&#39;s Blog'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+hasCJKLanguage = true
+paginate = 10
+
+[markup]
+[markup.highlight]
+noclasses = false
+
+[params]
+# 首页展示
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = false
+ShowToc = true
+TocOpen = false
+
+# 日期格式
+DateFormat = '2006-01-02'
+
+# 首页头像/描述
+homeInfoParams = { Title = 'Hi 👋', Content = 'Jansen Jiang · Go 后端开发 · 评测平台 &amp; 多模态' }
+
+# 社交链接
+[[params.socialIcons]]
+name = 'github'
+url = 'https://github.com/aha-jansen'
+
+# 菜单
+[[menu.main]]
+identifier = 'posts'
+name = '文章'
+url = '/posts/'
+weight = 10
+
+[[menu.main]]
+identifier = 'tags'
+name = '标签'
+url = '/tags/'
+weight = 20
+
+[[menu.main]]
+identifier = 'archives'
+name = '归档'
+url = '/archives/'
+weight = 30
+
+[[menu.main]]
+identifier = 'about'
+name = '关于'
+url = '/about/'
+weight = 40
