@@ -3,6 +3,7 @@ date = '2026-07-18T15:05:31+08:00'
 draft = false
 title = 'About'
 layout = 'single'
+toc = false
 +++
 
 ## 关于我
