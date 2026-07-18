@@ -1,5 +1,5 @@
 ---
-title: "深入理解 io.Reader 接口"
+title: "看似合理的io.Reader 接口"
 date: 2023-09-02
 draft: false
 tags:
@@ -93,7 +93,7 @@ func ReadAll(r Reader) ([]byte, error) {
 
 遇到这种必现的问题，一般首先是将 Case 尽可能简化。后面的现象就是当初始化 `textReader` 的字符串长度足够小时， `io.ReadAll` 就不会出现乱码。然后不免让人想到长度是否和 `io.ReadAll` 中初始化长度的 512 相关，后面使用 171 个相同的汉字组成的字符串，作为输入，字节总长度为 513。果然在最后就出现了乱码：
 
-> ⚠️ 原始截图文件已丢失，此图片无法显示。
+![alt text](../pics/io-reader-deep-dive-image.png)
 
 并且返回的长度为 512，从日志可以看出来，`io.ReadAll()` 最后一次调用 `textReader.Read()` 时，`p` 的长度只有 2 ，因此一个 3 字节的汉字被截断成乱码了。因此问题定位出来了：
 

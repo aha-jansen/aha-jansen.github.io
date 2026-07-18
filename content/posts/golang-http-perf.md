@@ -1,5 +1,5 @@
 ---
-title: "Golang 网络程序性能优化"
+title: "golang的HTTP流式客户端实现方法与对比"
 date: 2023-09-02
 draft: false
 tags:
