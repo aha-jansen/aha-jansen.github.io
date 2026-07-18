@@ -1,6 +1,6 @@
 baseURL = 'https://aha-jansen.github.io/'
 locale = 'zh-CN'
-title = 'Jansen&#39;s Blog'
+title = "Jansen's Blog"
 theme = 'PaperMod'
 
 enableRobotsTXT = true
@@ -27,7 +27,9 @@ TocOpen = false
 DateFormat = '2006-01-02'
 
 # 首页头像/描述
-homeInfoParams = { Title = 'Hi 👋', Content = 'Jansen Jiang · Go 后端开发 · 评测平台 &amp; 多模态' }
+[params.homeInfoParams]
+Title = "Hi 👋"
+Content = "Jansen Jiang · Go 后端开发 · 评测平台 & 多模态"
 
 # 社交链接
 [[params.socialIcons]]
