@@ -8,6 +8,8 @@ hasCJKLanguage = true
 paginate = 10
 
 [markup]
+[markup.goldmark.renderer]
+unsafe = true
 [markup.highlight]
 noclasses = false
 
